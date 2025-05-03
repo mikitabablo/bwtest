@@ -63,5 +63,3 @@ class ExchangeRatesApiClientTest extends TestCase
         $client->lookup();
     }
 }
-
-// TODO FIX ALL OF THESE
