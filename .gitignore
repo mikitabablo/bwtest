@@ -2,7 +2,3 @@
 .vscode/
 
 vendor/
-
-docker-compose.yml
-Dockerfile
-
