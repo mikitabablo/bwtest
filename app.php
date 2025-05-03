@@ -17,7 +17,7 @@ $config = require __DIR__ . '/config/config.php';
 
 /** Input processing */
 if (!isset($argv[1])) {
-    echo 'Error: no file provided';
+    echo 'Error: no file provided' . PHP_EOL;
     exit(1);
 }
 
