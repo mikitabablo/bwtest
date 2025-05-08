@@ -39,11 +39,11 @@ class CommissionCalculator implements ICommissionCalculator
         $exchangeRate = $rates->getRates()[$transaction->getCurrency()];
 
         // Amount with commission
-        return $this->toCents($transaction->getAmount() / $exchangeRate * $commission);
+        return $this->roundUpToCents($transaction->getAmount() / $exchangeRate * $commission);
     }
 
-    private function toCents(float $amount): float
+    private function roundUpToCents(float $amount): float
     {
-        return round($amount, 2);
+        return ceil($amount * 100) / 100;
     }
 }
